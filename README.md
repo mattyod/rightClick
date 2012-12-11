@@ -39,7 +39,7 @@ clipboard.
 The argument passed to copy() can be either a string or an array of strings,
 such as:
 
-  rightClick('./folder').copy(['file.js', 'folder', 'otherFile.md']);
+    rightClick('./folder').copy(['file.js', 'folder', 'otherFile.md']);
 
 ### paste()
 
