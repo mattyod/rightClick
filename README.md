@@ -61,6 +61,6 @@ This will delete the full contents and structure of a target folder or simply
 delete a file if that is the target. This is NOT reversable and nothing is
 written to the clipboard. Use with caution and certainty.
 
-##Licence
+## Licence
 
 MIT
