@@ -1,6 +1,5 @@
 // Helper modules
-var sinon   = require('sinon'),
-    unPrep  = require('../test/helpers/unprep'),
+var unPrep  = require('../test/helpers/unprep'),
     fs      = require('fs');
 
 // Files to unPrep (delete). N.B. We start at the deepest file as unPrep isn't
@@ -20,7 +19,7 @@ module.exports = {
     // For this test scenario the righClick method needs to be stubbed so that
     // the clipboard can be preloaded and paste() tested in isolation.
     this.rightClick = function() {
-      
+
       this.clipboard = {
 
         target: '',

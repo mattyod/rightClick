@@ -1,0 +1,36 @@
+{
+  "name": "rightClick",
+  "description": "Cut, copy, paste and delete for node.js",
+  "version": "0.1.0",
+  "keywords": [
+    "cut",
+    "copy",
+    "paste",
+    "delete"
+  ],
+  "author": {
+    "name": "Matthew O'Donoghue"
+  },
+  "main": "./lib/rightClick.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattyod/matic"
+  },
+  "bugs": {
+    "url": "https://github.com/mattyod/matic/issues"
+  },
+  "dependencies": {
+    "underscore": "1.x"
+  },
+  "devDependencies": {
+    "sinon": "1.4.x",
+    "nodeunit": "0.7.x",
+    "jade": "0.27.x"
+  },
+  "scripts": {
+    "test": "nodeunit tests"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}
