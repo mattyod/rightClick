@@ -63,4 +63,4 @@ written to the clipboard. Use with caution and certainty.
 
 ## Licence
 
-MIT
+[MIT](https://github.com/mattyod/rightclick/blob/master/LICENSE)
