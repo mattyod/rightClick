@@ -14,18 +14,14 @@
   "main": "./lib/rightClick.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattyod/matic"
+    "url": "https://github.com/mattyod/rightclick"
   },
   "bugs": {
-    "url": "https://github.com/mattyod/matic/issues"
-  },
-  "dependencies": {
-    "underscore": "1.x"
+    "url": "https://github.com/mattyod/rightclick/issues"
   },
   "devDependencies": {
-    "sinon": "1.4.x",
     "nodeunit": "0.7.x",
-    "jade": "0.27.x"
+    "underscore": "1.4.x"
   },
   "scripts": {
     "test": "nodeunit tests"
