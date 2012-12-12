@@ -24,7 +24,7 @@
     "underscore": "1.4.x"
   },
   "scripts": {
-    "test": "nodeunit tests"
+    "test": "nodeunit test"
   },
   "engines": {
     "node": "0.8.x"
