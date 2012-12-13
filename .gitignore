@@ -1,4 +1,5 @@
 driver.js
-sandbox
+driver-sandbox
 .DS_Store
 npm-debug.log
+node_modules
