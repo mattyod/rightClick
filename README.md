@@ -7,9 +7,9 @@ Deep cut, copy, paste & delete fuctionality for Node.js.
 rightClick attempts to emulate the expected behaviour of mouse interactions
 with file systems in a programatic way. Namely cut, copy, paste & delete.
 
-## Installing
+## Installation
 
-With NPM soon
+    npm install rightclick
 
 ## API
 
