@@ -1,4 +1,4 @@
-# rightClick [![Build Status](https://secure.travis-ci.org/mattyod/rightClick.png?branch=master)](http://travis-ci.org/mattyod/rightclick)
+# rightClick [![Build Status](https://secure.travis-ci.org/mattyod/rightClick.png)](http://travis-ci.org/mattyod/rightclick)
 
 Deep cut, copy, paste & delete fuctionality for Node.js.
 
