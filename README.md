@@ -58,7 +58,7 @@ To deep delete from the file system use:
     rightClick('./myParentFolder').del('myDesiredFileOrFolder');
 
 This will delete the full contents and structure of a target folder or simply
-delete a file if that is the target. This is NOT reversable and nothing is
+delete a file if that is the target. This is **not** reversable and nothing is
 written to the clipboard. Use with caution and certainty.
 
 ## Licence
