@@ -19,6 +19,9 @@
   "bugs": {
     "url": "https://github.com/mattyod/rightclick/issues"
   },
+  "dependencies": {
+    "col": "*"
+  },
   "devDependencies": {
     "nodeunit": "0.7.x",
     "underscore": "1.4.x"
