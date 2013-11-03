@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 03 November 2013, 0.2.1
+
+* Exit process instead of returning false
+
 ### 03 November 2013, 0.2.0
 
 * Return false instead of throwing error on file conflicts

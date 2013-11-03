@@ -1,7 +1,7 @@
 {
   "name": "rightclick",
   "description": "Cut, copy, paste and delete for node.js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "cut",
     "copy",
