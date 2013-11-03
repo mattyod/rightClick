@@ -7,7 +7,7 @@ module.exports = (function () {
         file = 'testfile.txt',
         out = './sandbox/out';
 
-    //console.log(rightClick(target).copy(file).clipboard);
+    console.log(rightClick(target).copy(file).clipboard);
 
     rightClick(target).copy(file).paste(out);
 

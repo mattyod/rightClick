@@ -16,7 +16,7 @@ module.exports = {
   },
 
   rightClick: function(test) {
-    
+
     test.expect(6);
 
     var path = './test/sandbox';
@@ -36,8 +36,8 @@ module.exports = {
     test.ok(typeof rightClick(path).del === 'function',
       'Del module loaded');
 
-    test.throws(function() {rightClick('./test/notFolder');}, Error,
-      'Error thrown when passed a non existant path');
+    test.ok(function() {rightClick('./test/notFolder');},
+      'Returns false when passed a non existant path');
 
     test.done();
 

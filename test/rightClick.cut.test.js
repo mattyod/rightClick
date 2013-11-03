@@ -43,7 +43,7 @@ module.exports = {
   },
 
   'cut file': function(test) {
-    
+
     test.expect(2);
 
     // Call tested module.
