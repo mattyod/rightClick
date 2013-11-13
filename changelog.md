@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 13 November 2013, 0.3.0
+
+* Added tap method allowing interception of chain
+
 ### 13 November 2013, 0.2.3
 
 * Update dependencies

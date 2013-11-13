@@ -33,7 +33,7 @@ module.exports = {
   },
 
   'delete file': function(test) {
-    
+
     test.expect(1);
 
     // Call tested module.

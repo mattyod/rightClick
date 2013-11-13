@@ -8,7 +8,7 @@ module.exports = {
     // For this test scenario the righClick method needs to be stubbed so that
     // the clipboard can be accessed by the test assertions.
     this.rightClick = function() {
-      
+
       this.clipboard = {
 
         target: './test/sandbox/copy/from/',
@@ -35,11 +35,11 @@ module.exports = {
   },
 
   'copy file': function(test) {
-    
+
     test.expect(2);
 
     this.rightClick().copy('file.txt');
-    
+
     test.ok(fs.existsSync('./test/sandbox/copy/from/file.txt'),
       'The file still exists');
 
@@ -55,7 +55,7 @@ module.exports = {
     test.expect(4);
 
     this.rightClick().copy(['file.txt', 'file2.txt']);
-    
+
     test.ok(fs.existsSync('./test/sandbox/copy/from/file.txt'),
       'The file still exists');
 
@@ -74,7 +74,7 @@ module.exports = {
   'copy folder': function(test) {
 
     test.expect(6);
-    
+
     // Call tested module
     this.rightClick().copy('deep');
 

@@ -61,6 +61,22 @@ This will delete the full contents and structure of a target folder or simply
 delete a file if that is the target. This is **not** reversable and nothing is
 written to the clipboard. Use with caution and certainty.
 
+### tap()
+
+Tap allows you to insert your own methods as callbacks within rightClick's method chain. Callbacks are initiated within rightClick's
+scope.
+
+To log out the clipboard you could do something like:
+
+```
+  rightClick('./folder')
+    .copy('things')
+    .tap(function () {
+      console.log(this.clipboard);
+    })
+    .paste('./target');
+```
+
 ## Licence
 
 [MIT](https://github.com/mattyod/rightclick/blob/master/LICENSE)
