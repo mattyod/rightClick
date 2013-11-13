@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 13 November 2013, 0.2.3
+
+* Update dependencies
+
 ### 13 November 2013, 0.2.2
 
 * Added Node 0.10 to engines.

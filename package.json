@@ -1,7 +1,7 @@
 {
   "name": "rightclick",
   "description": "Cut, copy, paste and delete for node.js",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "keywords": [
     "cut",
     "copy",
@@ -20,7 +20,9 @@
     "url": "https://github.com/mattyod/rightclick/issues"
   },
   "dependencies": {
-    "col": "*"
+    "col": "*",
+    "underscore": "1.5.2",
+    "nodeunit": "0.8.2"
   },
   "devDependencies": {
     "nodeunit": "0.7.x",
