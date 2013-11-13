@@ -2,5 +2,4 @@
 .travis.yml
 node_modules
 sandbox
-driver-sandbox
 driver.js
