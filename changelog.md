@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 7 March 2014, 0.4.1
+
+* Fixed arguments issue
+
 ### 7 March 2014, 0.4.0
 
 * Accepts optional argument of encoding type for copy to clipboard
