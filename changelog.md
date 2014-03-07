@@ -3,6 +3,7 @@
 ### 7 March 2014, 0.4.1
 
 * Fixed arguments issue
+* Fixed link to Travis
 
 ### 7 March 2014, 0.4.0
 
