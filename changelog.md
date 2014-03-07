@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 7 March 2013, 0.4.2
+
+* Arguments issue
+
 ### 7 March 2014, 0.4.1
 
 * Fixed arguments issue
