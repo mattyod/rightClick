@@ -13,6 +13,12 @@ with file systems in a programatic way. Namely cut, copy, paste & delete.
 
 ## API
 
+### rightClick()
+
+Select root folder for copy and cut operations and optionally determine encoding for copy.
+
+    rightClick('./', 'utf8');
+
 ### cut()
 
 To deep cut from the file system use:

@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 7 March 2014, 0.4.0
+
+* Accepts optional argument of encoding type for copy to clipboard
+
 ### 13 November 2013, 0.3.0
 
 * Added tap method allowing interception of chain
