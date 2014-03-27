@@ -3,19 +3,19 @@ var rightClick = require('../lib/rightClick');
 
 module.exports = {
 
-  setUp: function(callback) {
+  setUp: function (callback) {
 
     callback();
 
   },
 
-  tearDown: function(callback) {
+  tearDown: function (callback) {
 
     callback();
 
   },
 
-  rightClick: function(test) {
+  rightClick: function (test) {
 
     test.expect(7);
 
@@ -39,7 +39,7 @@ module.exports = {
     test.ok(typeof rightClick(path).tap === 'function',
       'Tap module loaded');
 
-    test.ok(function() {rightClick('./test/notFolder');},
+    test.ok(function () {rightClick('./test/notFolder'); },
       'Returns false when passed a non existant path');
 
     test.done();

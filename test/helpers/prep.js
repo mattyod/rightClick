@@ -8,16 +8,16 @@ var fs = require('fs'),
 
 
 // TODO: throw an error if files already exist?
-module.exports = function(location, files) {
-  
-  if(fs.existsSync(location)) {
+module.exports = function (location, files) {
+
+  if (fs.existsSync(location)) {
 
     // Itterate the files array and write out each member
-    _.each(files, function(content, name) {
-      
-      if(!fs.existsSync(name)) {
+    _.each(files, function (content, name) {
+
+      if (!fs.existsSync(name)) {
         // It's a folder
-        if(!content) {
+        if (!content) {
 
           fs.mkdirSync(name);
 

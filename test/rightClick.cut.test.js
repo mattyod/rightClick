@@ -24,7 +24,7 @@ var unPrepObject = [
 
 module.exports = {
 
-  setUp: function(callback) {
+  setUp: function (callback) {
 
     // Create some files to cut.
     prep('./test/sandbox/cut', prepObject);
@@ -33,7 +33,7 @@ module.exports = {
 
   },
 
-  tearDown: function(callback) {
+  tearDown: function (callback) {
 
     // Files should be deleted but in case something went wrong...
     unPrep(unPrepObject);
@@ -42,7 +42,7 @@ module.exports = {
 
   },
 
-  'cut file': function(test) {
+  'cut file': function (test) {
 
     test.expect(2);
 
@@ -59,7 +59,7 @@ module.exports = {
 
   },
 
-  'cut folder': function(test) {
+  'cut folder': function (test) {
 
     test.expect(5);
 

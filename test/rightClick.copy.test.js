@@ -3,11 +3,11 @@ var fs  = require('fs');
 
 module.exports = {
 
-  setUp: function(callback) {
+  setUp: function (callback) {
 
     // For this test scenario the righClick method needs to be stubbed so that
     // the clipboard can be accessed by the test assertions.
-    this.rightClick = function() {
+    this.rightClick = function () {
 
       this.clipboard = {
 
@@ -28,13 +28,13 @@ module.exports = {
 
   },
 
-  tearDown: function(callback) {
+  tearDown: function (callback) {
 
     callback();
 
   },
 
-  'copy file': function(test) {
+  'copy file': function (test) {
 
     test.expect(2);
 
@@ -50,7 +50,7 @@ module.exports = {
 
   },
 
-  'copy file array': function(test) {
+  'copy file array': function (test) {
 
     test.expect(4);
 
@@ -71,7 +71,7 @@ module.exports = {
     test.done();
   },
 
-  'copy folder': function(test) {
+  'copy folder': function (test) {
 
     test.expect(6);
 

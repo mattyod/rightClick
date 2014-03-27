@@ -1,43 +1,42 @@
 
 module.exports = {
 
-  setUp: function(callback) {
+  setUp: function (callback) {
 
     this.rightClick = function () {
 
-        this.clipboard = {
+      this.clipboard = {
 
-            target: '',
+        target: '',
 
-            files: {
-                'thing': false
-            }
-        };
+        files: {
+          'thing': false
+        }
+      };
 
-        this.tap = require('../lib/tap');
+      this.tap = require('../lib/tap');
 
-        return this;
-    }
+      return this;
+    };
 
     callback();
 
   },
 
-  tearDown: function(callback) {
+  tearDown: function (callback) {
 
     callback();
 
   },
 
   tap: function (test) {
-    var thing = false;
 
     this.rightClick().tap(function () {
-        this.clipboard.thing = true;
+      this.clipboard.thing = true;
     });
 
     test.ok(this.clipboard.thing,
-        'thing set to true');
+      'thing set to true');
 
     test.done();
   }

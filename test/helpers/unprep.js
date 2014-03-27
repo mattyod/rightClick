@@ -1,12 +1,12 @@
 var fs = require('fs');
 
-module.exports = function(files) {
-  
-  files.forEach(function(file) {
+module.exports = function (files) {
 
-    if(fs.existsSync(file)) {
+  files.forEach(function (file) {
 
-      if(fs.statSync(file).isDirectory()) {
+    if (fs.existsSync(file)) {
+
+      if (fs.statSync(file).isDirectory()) {
 
         fs.rmdirSync(file);
 

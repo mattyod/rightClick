@@ -8,7 +8,7 @@ var fs    = require('fs'),
 
 module.exports = {
 
-  setUp: function(callback) {
+  setUp: function (callback) {
 
     // A set of files and folders to create with prep.
     var prepObject = {
@@ -26,13 +26,13 @@ module.exports = {
 
   },
 
-  tearDown: function(callback) {
+  tearDown: function (callback) {
 
     callback();
 
   },
 
-  'delete file': function(test) {
+  'delete file': function (test) {
 
     test.expect(1);
 
@@ -46,7 +46,7 @@ module.exports = {
 
   },
 
-  'delete folder': function(test) {
+  'delete folder': function (test) {
 
     test.expect(4);
 

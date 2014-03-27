@@ -25,9 +25,13 @@
     "underscore": "1.6.0"
   },
   "devDependencies": {
-    "nodeunit": "0.8.6"
+    "nodeunit": "0.8.6",
+    "jshint": "2.4.4"
   },
   "scripts": {
-    "test": "nodeunit test"
+    "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
+    "lint": "./node_modules/jshint/bin/jshint ./",
+    "unit": "nodeunit test",
+    "test": "npm run lint && npm run unit"
   }
 }

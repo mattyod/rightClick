@@ -14,11 +14,11 @@ var unPrepObject = [
 
 module.exports = {
 
-  setUp: function(callback) {
+  setUp: function (callback) {
 
     // For this test scenario the righClick method needs to be stubbed so that
     // the clipboard can be preloaded and paste() tested in isolation.
-    this.rightClick = function() {
+    this.rightClick = function () {
 
       this.clipboard = {
 
@@ -50,7 +50,7 @@ module.exports = {
 
   },
 
-  tearDown: function(callback) {
+  tearDown: function (callback) {
 
     // Clean up pasted files
     unPrep(unPrepObject);
@@ -59,7 +59,7 @@ module.exports = {
 
   },
 
-  paste: function(test) {
+  paste: function (test) {
     test.expect(8);
 
     // Call tested method.
