@@ -1,6 +1,10 @@
 # rightClick Changelog
 
-### 7 March 2013, 0.4.2
+### 27 March 2014, 0.4.3
+
+* Use path.resolve()
+
+### 7 March 2014, 0.4.2
 
 * Arguments issue
 
