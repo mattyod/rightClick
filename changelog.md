@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 28 March 2014, 0.4.4
+
+* Don't error when passed undefined docPath to Copy or Delete
+
 ### 27 March 2014, 0.4.3
 
 * Use path.resolve()
