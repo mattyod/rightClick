@@ -60,7 +60,7 @@ module.exports = {
   },
 
   paste: function (test) {
-    test.expect(8);
+    test.expect(11);
 
     // Call tested method.
     this.rightClick().paste('./test/sandbox/paste');
@@ -88,6 +88,44 @@ module.exports = {
 
     test.strictEqual(fs.readFileSync(unPrepObject[4], 'binary'), 'aaa',
       'deep/deeper/file.txt has expected text');
+
+    // Redefining rightClick clipboard for force
+    this.rightClick = function () {
+
+      this.clipboard = {
+
+        target: '',
+
+        files: {
+          'file.txt': 'foo',
+          'deep': {
+            'file.txt': 'bar',
+            'deeper': {
+              'file.txt': 'baz'
+            }
+          }
+        }
+
+      };
+
+      // The tested module.
+      this.paste = require('../lib/paste');
+
+      return this;
+
+    };
+
+    // Call tested method with force.
+    this.rightClick().paste('./test/sandbox/paste', true);
+
+    test.strictEqual(fs.readFileSync(unPrepObject[0], 'binary'), 'baz',
+      'file.txt has been over written with force');
+
+    test.strictEqual(fs.readFileSync(unPrepObject[2], 'binary'), 'bar',
+      'deep/file.txt has been over written with force');
+
+    test.strictEqual(fs.readFileSync(unPrepObject[4], 'binary'), 'foo',
+      'deep/deeper/file.txt been over written with force');
 
     test.done();
 

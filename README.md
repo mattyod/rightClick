@@ -57,6 +57,10 @@ use:
 This will copy the entire contents of the clipboard to the target folder which
 must exist.
 
+As of version 0.5.0 paste now accepts an optional force boolean. This will allow you to paste over existing folders. i.e.
+
+    rightClick('./myParentFolder').copy('myFolder').paste('myNewDestination', true);
+
 ### del()
 
 To deep delete from the file system use:
