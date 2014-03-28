@@ -21,7 +21,7 @@
     "url": "https://github.com/mattyod/rightclick/issues"
   },
   "dependencies": {
-    "col": "0.0.4",
+    "col": "0.0.5",
     "underscore": "1.6.0"
   },
   "devDependencies": {
