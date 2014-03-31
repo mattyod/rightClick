@@ -39,6 +39,8 @@ The following would only cut files with the suffix .js & .css from within subFol
 
     rightClick('./folder').cut(['subFolder'], ['js', 'css'])
 
+**N.B.** In this scenario the entirety of subFolder will be removed from the disk system but only files with the suffix .js & .css will be written to the clipboard.
+
 ### copy()
 
 To deep copy from the file system use:

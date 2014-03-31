@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 31 March 2014, 0.6.1
+
+* Added clarity to README for cut with suffix.
+
 ### 31 March 2014, 0.6.0
 
 * Copy & Cut now accept optional suffix argument
