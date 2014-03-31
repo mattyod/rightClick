@@ -33,6 +33,12 @@ such as:
 
     rightClick('./folder').cut(['file.js', 'folder', 'otherFile.md']);
 
+As of version 0.6.0 cut now accepts an optional suffix argument which can be either a string or an array. If given rightClick will cut files with the given suffix.
+
+The following would only cut files with the suffix .js & .css from within subFolder.
+
+    rightClick('./folder').cut(['subFolder'], ['js', 'css'])
+
 ### copy()
 
 To deep copy from the file system use:
@@ -46,6 +52,12 @@ The argument passed to copy() can be either a string or an array of strings,
 such as:
 
     rightClick('./folder').copy(['file.js', 'folder', 'otherFile.md']);
+
+As of version 0.6.0 copy now accepts an optional suffix argument which can be either a string or an array. If given rightClick will copy files with the given suffix.
+
+The following would only copy files with the suffix .js & .css from within subFolder.
+
+    rightClick('./folder').copy(['subFolder'], ['js', 'css'])
 
 ### paste()
 

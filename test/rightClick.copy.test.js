@@ -98,6 +98,26 @@ module.exports = {
 
     test.done();
 
+  },
+
+  'copy with suffix': function (test) {
+
+    test.expect(3);
+
+    // Call tested module
+    this.rightClick().copy('mixed', ['txt', 'js']);
+
+    test.equal(this.clipboard.files.mixed['text.txt'].toString(), 'text file\n',
+      'Text (.txt) file has been copied');
+
+    test.equal(this.clipboard.files.mixed['javascript.js'].toString(), 'console.log(\'a\');\n',
+      'JavaScript (.js) file has been copied');
+
+    test.equal(this.clipboard.files.mixed['other.rb'], undefined,
+      'Other file has not been copied');
+
+    test.done();
+
   }
 
 };

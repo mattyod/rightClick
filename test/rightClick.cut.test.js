@@ -10,7 +10,8 @@ var prepObject = {
   './test/sandbox/cut/deep': null,
   './test/sandbox/cut/deep/file.txt': 'bbb',
   './test/sandbox/cut/deep/deeper/': null,
-  './test/sandbox/cut/deep/deeper/file.txt': 'ccc'
+  './test/sandbox/cut/deep/deeper/file.txt': 'ccc',
+  './test/sandbox/cut/deep/other.rb': 'xxx'
 };
 
 // Clean up object for if tests fail.
@@ -19,6 +20,7 @@ var unPrepObject = [
   './test/sandbox/cut/deep/deeper/file.txt',
   './test/sandbox/cut/deep/deeper/',
   './test/sandbox/cut/deep/file.txt',
+  './test/sandbox/cut/deep/other.rb',
   './test/sandbox/cut/deep'
 ];
 
@@ -61,7 +63,7 @@ module.exports = {
 
   'cut folder': function (test) {
 
-    test.expect(5);
+    test.expect(6);
 
     // Call tested module
     var that = rightClick('./test/sandbox/cut/').cut('deep');
@@ -80,6 +82,9 @@ module.exports = {
     test.equal(that.clipboard.files.deep['file.txt'].toString(), 'bbb',
       'The file is available on the clipboard');
 
+    test.equal(that.clipboard.files.deep['other.rb'].toString(), 'xxx',
+      'The file is available on the clipboard');
+
     test.ok(typeof that.clipboard.files.deep.deeper === 'object',
       'Folder object has been created on the clipboard for deeper');
 
@@ -88,6 +93,22 @@ module.exports = {
 
     test.done();
 
+  },
+
+  'cut with suffix': function (test) {
+
+    test.expect(2);
+
+    // Call tested module
+    var that = rightClick('./test/sandbox/cut/').cut('deep', ['txt']);
+
+    test.equal(that.clipboard.files.deep['file.txt'].toString(), 'bbb',
+      'The file is available on the clipboard');
+
+    test.equal(that.clipboard.files.deep['other.rb'], undefined,
+      'The file has not been cut');
+
+    test.done();
   }
 
 };

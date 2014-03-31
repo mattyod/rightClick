@@ -8,12 +8,12 @@ module.exports = (function () {
         file = 'testfile.txt',
         out = './sandbox/out';
 
-    console.log(rightClick(target, 'utf8')
-      .copy(fs.readdirSync(target)).clipboard);
+    rightClick(target, 'utf8')
+      .copy(fs.readdirSync(target), ['txt', 'js']);
 
     rightClick(target, 'utf8').copy(fs.readdirSync(target)).tap(function () {
         console.log('tap', this.clipboard);
         return this;
-    }).paste(out);
+    }).paste(out, true);
 
 })();

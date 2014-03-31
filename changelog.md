@@ -1,5 +1,9 @@
 # rightClick Changelog
 
+### 31 March 2014, 0.6.0
+
+* Copy & Cut now accept optional suffix argument
+
 ### 28 March 2014, 0.5.0
 
 * Paste now accepts optional force argument
