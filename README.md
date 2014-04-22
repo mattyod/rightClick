@@ -33,7 +33,7 @@ such as:
 
     rightClick('./folder').cut(['file.js', 'folder', 'otherFile.md']);
 
-As of version 0.6.0 cut now accepts an optional suffix argument which can be either a string or an array. If given rightClick will cut files with the given suffix.
+Cut accepts an optional suffix argument which can be either a string or an array. If given rightClick will cut files with the given suffix.
 
 The following would only cut files with the suffix .js & .css from within subFolder.
 
@@ -55,7 +55,7 @@ such as:
 
     rightClick('./folder').copy(['file.js', 'folder', 'otherFile.md']);
 
-As of version 0.6.0 copy now accepts an optional suffix argument which can be either a string or an array. If given rightClick will copy files with the given suffix.
+Copy accepts an optional suffix argument which can be either a string or an array. If given rightClick will copy files with the given suffix.
 
 The following would only copy files with the suffix .js & .css from within subFolder.
 
@@ -71,7 +71,7 @@ use:
 This will copy the entire contents of the clipboard to the target folder which
 must exist.
 
-As of version 0.5.0 paste now accepts an optional force boolean. This will allow you to paste over existing folders. i.e.
+Paste accepts an optional force boolean. This will allow you to paste over existing folders. i.e.
 
     rightClick('./myParentFolder').copy('myFolder').paste('myNewDestination', true);
 
@@ -99,6 +99,17 @@ To log out the clipboard you could do something like:
       console.log(this.clipboard);
     })
     .paste('./target');
+```
+
+Tap can also accept a function and arguments that will be applied to it, i.e:
+```
+  var func = function (a, b) {
+    console.log(a + b); // 3
+  };
+
+  rightClick('./folder')
+    .copy('things')
+    .tap(func, 1, 2);
 ```
 
 ## Licence

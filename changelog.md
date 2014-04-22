@@ -1,8 +1,13 @@
 # rightClick Changelog
 
+### 22 April 2014, 0.7.0
+
+* Tap method can now accept additional arguments that will be applied to the callback
+* Updated logging to a more 'console' style
+
 ### 31 March 2014, 0.6.1
 
-* Added clarity to README for cut with suffix.
+* Added clarity to README for cut with suffix
 
 ### 31 March 2014, 0.6.0
 

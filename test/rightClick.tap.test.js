@@ -39,6 +39,19 @@ module.exports = {
       'thing set to true');
 
     test.done();
+  },
+
+  tapWithArguments: function (test) {
+    var ans, func = function (a, b) {
+      ans = a + b;
+    };
+
+    this.rightClick().tap(func, 1, 2);
+
+    test.equal(ans, 3,
+      'function accepted given arguments');
+
+    test.done();
   }
 
 };
