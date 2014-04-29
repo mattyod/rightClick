@@ -1,5 +1,10 @@
 # rightClick Changelog
 
+### 28 April, 0.7.1
+
+* Added NPM and dependencies badges.
+* Updated dependencies
+
 ### 22 April 2014, 0.7.0
 
 * Tap method can now accept additional arguments that will be applied to the callback
