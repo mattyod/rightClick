@@ -1,7 +1,7 @@
 {
   "name": "rightclick",
   "description": "Cut, copy, paste and delete for node.js",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "keywords": [
     "cut",
     "copy",
@@ -22,11 +22,11 @@
   },
   "dependencies": {
     "col": "0.1.0",
-    "underscore": "1.6.0"
+    "underscore": "1.7.0"
   },
   "devDependencies": {
-    "nodeunit": "0.8.6",
-    "jshint": "2.5.0"
+    "nodeunit": "0.9.0",
+    "jshint": "2.5.5"
   },
   "scripts": {
     "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
