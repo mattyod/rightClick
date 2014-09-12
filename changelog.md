@@ -1,6 +1,10 @@
 # rightClick Changelog
 
-### 28 April, 0.7.1
+### 12 September 2014, 0.7.2
+
+* Dependecies updated.
+
+### 28 April 2014, 0.7.1
 
 * Added NPM and dependencies badges.
 * Updated dependencies
